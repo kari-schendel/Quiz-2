@@ -1,1 +1,8 @@
-<h1>Welcome to my Awesome Web App</h1>
+<%= @cities.each do |city| %>
+  <div>
+    <h1><%= city.name %></h1><br />
+    <p><%= city.description %></p><br />
+  </div>
+
+  <hr />
+<% end %>
